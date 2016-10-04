@@ -1,0 +1,16 @@
+{
+  "name": "top_stocks",
+  "version": "1.0.0",
+  "description": "gives the top N stocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js "
+  },
+  "author": "Arwa Lokhandwala",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "redis": "^2.6.2",
+    "restify": "^4.1.1"
+  }
+}
