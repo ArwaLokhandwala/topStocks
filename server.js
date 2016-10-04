@@ -8,6 +8,7 @@ var server = restify.createServer({
     version: '1.0.0'
 });
 
+var port = process.argv[2];
 
 //Function to populate the rank of stocks
 function findTopStocks(req, reply, next) {
@@ -79,6 +80,6 @@ function getTopStocks(req, res, next) {
 
 server.get('/top/:size', findTopStocks, getTopStocks);
 
-server.listen(8080, function() {
-    console.log('%s listening at %s', server.name, server.host);
+server.listen(port, function() {
+    console.log('%s listening on port %s', server.name, port);
 });
