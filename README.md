@@ -8,6 +8,7 @@ Steps:
 2) Run "npm install" to install all the dependencies.
 
 3) run command "node server.js `port`". Example: node server.js 8080
+
 4) Now either on browser or POSTMAN hit "http://localhost:port/top/:size" where 
     size - length total top stocks required
     port - port number specified
